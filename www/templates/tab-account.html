@@ -1,0 +1,16 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+      <div class="">{{sannerurl}}</div>
+      <pre ng-bind="device.info"></pre>
+      <button type="button" ng-click="scanBarcode()">扫描二维码</button>
+      <button type="button" ng-click="test()">测试</button>
+      <button type="button" ng-click="viewdevice()">查看本机信息</button>
+      <button type="button" ng-click="opencamera()">打开相机</button>
+      <img class="" id="myImage">
+    </ion-list>
+  </ion-content>
+</ion-view>
